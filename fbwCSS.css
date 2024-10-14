@@ -1,0 +1,206 @@
+*{
+  margin:0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: 	#FFFF00;
+  padding-top: 100px
+}
+
+#header-img{
+  width: 50px;
+}
+
+#nav-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: orange;
+  padding: 10px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  padding: 0 10px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.the-product {
+  font-size: 25px;
+  margin-left: 10px;
+  font-weight: 700;
+  font-family: "montserrat"
+}
+
+#email-section {
+  margin-top: 100px;
+}
+
+section {
+  margin: 40px 20px;
+  text-align: center;
+}
+
+input {
+  padding: 8px;
+  border-radius: 15px;
+  border: 1px solid #F5F5DC;
+}
+
+#submit {
+  background-color: #FF4500;
+  color: white;
+  cursor: pointer;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-family: verdana;
+}
+
+.icon {
+  color: red;
+  margin-right: 20px;
+}
+
+.hut {
+  padding-top: 20px;
+}
+
+#features {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  font-family: "montserrat"
+}
+#video {
+  width: 100%;
+}
+
+.product-image {
+  width: 100%;
+  height: 500px;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid red;
+  border-radius: 10px 10px 0 0;
+}
+
+.product1 {
+  background-image: url(https://brazzabnu.chefware.com.br/88/0/0/quintuplo-burguer-para-pedir-clique-aqui.jpg);
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.inner-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.content {
+  font-family: "montserrat";
+  color: orange;
+  margin-bottom: 10px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.main-price {
+  margin-right: 20px;
+  font-size: 30px;
+  text-decoration: line-through;
+}
+
+.header {
+  margin: 10px 0;
+}
+
+.add {
+  background-color: red;
+  cursor: pointer;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  color: white;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+  #nav-bar {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (450px < width < 600px) {
+  .card {
+    font-size: 0.85rem;
+  }
+  .product-image {
+    height: 400px;
+  }
+}
+
+@media only screen and (450px <= width) {
+  .card {
+    display: flex;
+    max-width: 525px;
+  }
+  .inner-card {
+    width: 300px;
+    padding: 20px;
+  }
+  .product-image {
+    width: 400px;
+    border-radius: 10px 0 0 10px;
+  }
+}
+
+@media only screen and (450px >= width) {
+  #video {
+    width: 70%;
+  }
+  .product-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
